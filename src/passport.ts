@@ -3,8 +3,7 @@ import passport from "passport";
 import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 import jwt from "jsonwebtoken";
 import { userModel } from "./db";
-import e from "express";
-import {CLIENT}
+
 const JWT_SECRET = "12341234";
 
 // --- Passport Google Strategy ---
@@ -13,7 +12,7 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID ||" ",
       clientSecret: process.env.CLIENT_SECRET ||" ",
-      callbackURL: "http://localhost:3000/auth/google/callback",
+      callbackURL: "https://brainlybackend-7fcv.onrender.com/auth/google/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
       const user = {
