@@ -166,7 +166,7 @@ app.get(
       // res.redirect(`http://localhost:3000?token=${token}`);
   
       // 🔵 Option 2: Send JWT in response (JSON)
-      res.redirect("http://localhost:5173/dashboard?token="+token);
+      res.redirect("https://brainly-xi.vercel.app/dashboard?token="+token);
     }
   );
   
