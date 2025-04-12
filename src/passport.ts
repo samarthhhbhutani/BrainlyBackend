@@ -12,7 +12,7 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID ||" ",
       clientSecret: process.env.CLIENT_SECRET ||" ",
-      callbackURL: "https://brainlybackend-7fcv.onrender.com/auth/google/callback",
+      callbackURL: "https://brainly-xi.vercel.app//auth/google/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
       const user = {
