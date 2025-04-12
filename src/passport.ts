@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken";
 import { userModel } from "./db";
 
 const JWT_SECRET = "12341234";
-
+console.log(process.env.CLIENT_ID)
 // --- Passport Google Strategy ---
 passport.use(
   new GoogleStrategy(
