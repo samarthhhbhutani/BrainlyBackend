@@ -6,6 +6,7 @@ import { userModel } from "./db";
 
 const JWT_SECRET = "12341234";
 console.log(process.env.CLIENT_ID)
+console.log("CLIENT_SECRET:", process.env.CLIENT_SECRET);
 // --- Passport Google Strategy ---
 passport.use(
   new GoogleStrategy(
