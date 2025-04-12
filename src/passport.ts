@@ -10,8 +10,8 @@ console.log(process.env.CLIENT_ID)
 passport.use(
   new GoogleStrategy(
     {
-      clientID: process.env.CLIENT_ID ||" ",
-      clientSecret: process.env.CLIENT_SECRET ||" ",
+      clientID: process.env.CLIENT_ID ||"",
+      clientSecret: process.env.CLIENT_SECRET ||"",
       callbackURL: "https://brainlybackend-7fcv.onrender.com/auth/google/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
