@@ -19,6 +19,12 @@ const passwordSchema=z.string().min(8).max(20);
 app.use(express.json());
 app.use(cors());
 
+app.get("/",function(req,res){
+    res.status(200).json({
+        message:"Empty request"
+    })
+})
+
 
 app.post("/api/v1/signup",async function(req,res){
     let username=req.body.username;
